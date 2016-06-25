@@ -1,0 +1,30 @@
+#auth-button{
+    left: 0;
+    right: 0;
+    margin-top: 200px;
+    width: 30%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+}
+
+#auth-button a, a:visited{
+    margin: 2.5px;
+    height: 30px;
+    margin-left: 10px;
+    float: left;
+    line-height: 30px;
+    vertical-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+#telegram-logo{
+    margin: 2.5px;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+.mono{
+    font-family: monospace;
+} 
