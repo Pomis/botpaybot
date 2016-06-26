@@ -3,12 +3,16 @@
 //
 route();
 
-
-function route(){
-    setTimeout(function(){
-        var location = (window.location.toString().split('#')[1].split('\/')[0]);
-        if (location == "dashboard"){
-            loadDashboard();
+function route() {
+    setTimeout(function () {
+        if (window.location.toString().split('#')[1] != null) {
+            var location = (window.location.toString().split('#')[1].split('\/')[0]);
+            if (location == "dashboard") {
+                loadDashboard();
+            }
+            else {
+                loadAuth();
+            }
         } else {
             loadAuth();
         }
@@ -26,7 +30,7 @@ function loadDashboard() {
     $('#auth-dashboard').addClass('active');
 }
 
-function loadAuth(){
+function loadAuth() {
     setTimeout(checkIfUserConfirmed, 1000);
     $('#content')
         .text("")
@@ -34,6 +38,7 @@ function loadAuth(){
     $('#auth-dashboard').removeClass('active');
     $('#auth-li').addClass('active');
 
-}/**
+}
+/**
  * Created by romanismagilov on 26.06.16.
  */
