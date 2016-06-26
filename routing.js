@@ -28,10 +28,11 @@ function loadDashboard() {
         .load("manage.html");
     $('#auth-li').removeClass('active');
     $('#auth-dashboard').addClass('active');
+    getBot();
+
 }
 
 function loadAuth() {
-    setTimeout(checkIfUserConfirmed, 1000);
     $('#content')
         .text("")
         .load("auth.html");

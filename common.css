@@ -10,6 +10,7 @@
 }
 
 #auth-button a, a:visited{
+    display: block;
     margin: 2.5px;
     height: 30px;
     margin-left: 10px;
@@ -20,16 +21,42 @@
     color: #fff;
 }
 #telegram-logo{
+    display: block;
     margin: 2.5px;
     height: 30px;
     width: 30px;
     float: left;
 }
 .mono{
+    background-color: white;
+    color: white;
     max-width: 500px;
     word-break: break-all;
     font-family: monospace;
 }
+.mono:hover{
+    background-color: white;
+    color: #000;
+}
 #content{
     padding: 20px;
+}
+#loading{
+    vertical-align: center;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+
+}
+#waiting{
+    display: none;
+}
+#exit-button{
+    float: right;
 }
