@@ -26,5 +26,10 @@
     float: left;
 }
 .mono{
+    max-width: 500px;
+    word-break: break-all;
     font-family: monospace;
-} 
+}
+#content{
+    padding: 20px;
+}
